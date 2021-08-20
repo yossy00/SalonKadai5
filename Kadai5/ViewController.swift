@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var resultLabel: UILabel!
     
     @IBAction func Calculation(_ sender: UIButton) {
-        guard  let num1 = Double(number1TextField.text ?? "") else {
+        guard let num1 = Double(number1TextField.text ?? "") else {
             showAleat(message: "割られる数を入力して下さい")
             return
         }
@@ -38,9 +38,4 @@ class ViewController: UIViewController {
         aleat.addAction(ok)
         present(aleat, animated: true, completion: nil)
     }
-    
-    
-    
-    
 }
-
